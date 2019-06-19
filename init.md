@@ -1,4 +1,4 @@
 ## 1. Just Init It
 ### Все работает локально
-`git init`  
-`git clone`  
+1. `git init`
+2. `git clone`
