@@ -3,5 +3,6 @@
 1. `git add`
 2. `git commit`
 3. `git status`
-4. `git log`
-5. `gitk`
+4. `git show`
+5. `git log`
+6. `gitk`
