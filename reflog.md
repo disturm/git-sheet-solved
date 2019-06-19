@@ -1,2 +1,4 @@
 ## 6. Hide The Garbage
-### Lorem ipsum dolor sit amet, consectetur adipiscing elit
+### Видно только то, на что есть указатели
+- `git reflog`  
+- `git gc`  
