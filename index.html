@@ -26,8 +26,13 @@
             page-break-after: always;
         }
 
-        .page div {
-            padding: 20px;
+        .page .column {
+            margin: 0px 10px;
+            width: 100%;
+        }
+
+        .page .block {
+            margin: 20px;
             width: 100%;
         }
     </style>
@@ -35,45 +40,25 @@
 <body>
     <h1>Git Rules Sheet</h1>
     <div class="page">
-        <div>
-            <div>
-                <zero-md src="./init.md"/>
-            </div>
-            <div>
-                    <zero-md src="./commit.md"/>
-                </div>
-            <div>
-                <zero-md src="./branch.md"/>
-            </div>
+        <div class="column">
+            <div class="block"><zero-md src="./init.md"/></div>
+            <div class="block"><zero-md src="./commit.md"/></div>
         </div>
-        <div>
-            <div>
-                <zero-md src="./merge.md"/>
-            </div>
-            <div>
-                <zero-md src="./rebase.md"/>
-            </div>
-            <div>
-                <zero-md src="./reflog.md"/>
-            </div>
+        <div class="column">
+            <div class="block"><zero-md src="./branch.md"/></div>
+            <div class="block"><zero-md src="./merge.md"/></div>
         </div>
     </div>
     <div class="page">
-        <div>
-            <div>
-                <zero-md src="./fetch.md"/>
-            </div>
-            <div>
-                <zero-md src="./push.md"/>
-            </div>
-            <div>
-                <zero-md src="./upstream.md"/>
-            </div>
+        <div class="column">
+            <div class="block"><zero-md src="./rebase.md"/></div>
+            <div class="block"><zero-md src="./reflog.md"/></div>
+            <div class="block"><zero-md src="./fetch.md"/></div>
         </div>
-        <div>
-            <div>
-                <zero-md src="./reset.md"/>
-            </div>
+        <div class="column">
+            <div class="block"><zero-md src="./push.md"/></div>
+            <div class="block"><zero-md src="./upstream.md"/></div>
+            <div class="block"><zero-md src="./reset.md"/></div>
         </div>
     </div>
 </body>
