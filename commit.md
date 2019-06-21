@@ -1,14 +1,10 @@
 ## 2. Tree Of Commits
-### Git хранит последовательность состояний некоторой директории
-- `git add` — Add file contents to the index
-- `git add .`
-- `git commit` — Record changes to the repository
-- `git commit -m <msg>`
-- `git status` — Show the working tree status
-- `git status -sb` Give the output in the short-format. Show the branch and tracking info even in short-format.
-- `git show <object>` — Show various types of objects
-- `git log` — Show commit logs
-- `git log --oneline` This is a shorthand for "--pretty=oneline --abbrev-commit" used together.
-- `git log --oneline --graph` Draw a text-based graphical representation of the commit history on the left hand side of the output
-- `git log --oneline --graph --all` Pretend as if all the refs in refs/, along with HEAD, are listed on the command line as <commit>.
-- `gitk`
+### Хранится последовательность состояний некоторой директории
+- `git add .` — добавить все измененные файлы в индекс
+- `git commit -m <msg>` — записать изменения из индекс в репозиторий
+- `git status -sb` — вывести состояние директории и индекса кратко с указанием текущей ветки
+- `git show <commit>` — показать содержимое коммита
+- `git log --oneline` — вывести список коммитов, связанных с HEAD, в кратком виде
+- `git log --oneline --graph` — вывести историю коммитов, связанных с HEAD, в виде дерева
+- `git log --oneline --graph --all` — вывести историю всех коммитов в виде дерева
+- `gitk` — открыть графическое представление репозитория

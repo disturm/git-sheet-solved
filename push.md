@@ -1,6 +1,6 @@
 ## 8. Will Push Force be with you
-### Любое изменение в удаленном репозитории — это push
-- `git push` = `git push origin HEAD` — Update remote refs along with associated objects
-- `git push <remote> <local_branch>:<remote_branch>`
-- `git push <remote> -d <branch>`
-- `git push -f`
+### Изменить удаленный репозиторий — это push
+- `git push <remote> <local_branch>:<remote_branch>` — добавить изменения из локальной ветки `<local_branch>` и переместить ветку `<remote_branch>` удаленного репозитория
+- `git push` = `git push origin HEAD` — добавить изменения из текущей локальной ветки и переместить соответствующую ветку удаленного репозитория
+- `git push -f` — выполнить `push`, даже если удаленная ветка находится в другом поддереве
+- `git push <remote> -d <branch>` — удалить ветку в удаленном репозитории

@@ -1,10 +1,12 @@
 ## 3. Tag To Branch
-### Git использует именованные указатели
-- `git tag` — Create, list, delete or verify a tag object signed with GPG
-- `git tag <tagname>` lightweight tag
-- `git branch` — List, create, or delete branches
-- `git branch <branchname>`
-- `git branch -d <branchname>`
-- `git branch -av` - удаленные плюс свои
-- `git checkout <branch>` — Switch branches, update HEAD to set the specified branch as the current branch
-- `git checkout -b <new_branch>`
+### Используются именованные ссылки
+- `git tag` — вывести список тегов
+- `git tag <tagname>` — создать тег
+- `git branch` — вывести список локальных веток
+- `git branch -av` - вывести список локальных и удаленных веток
+- `git branch <branchname>` — создать ветку
+- `git branch -d <branchname>` — удалить ветку
+- `git checkout <commit>` — переместить HEAD на коммит
+- `git checkout <branch>` — переместить HEAD на ветку
+- `git checkout -m <branch>` — переместить HEAD, объединить текущие изменения с состоянием ветки
+- `git checkout -b <new_branch>` — создать новую ветку и перейти на нее

@@ -1,9 +1,10 @@
-## 9. Upstream Policy
+## 9. Upstream Mode
 ### Связь локальных и удаленных веток устанавливается явно
-- `git push -u origin HEAD` — For every branch that is up to date or successfully pushed, add upstream (tracking) reference
-- `git branch -u <upstream> <branchname>` — Set up <branchname>'s tracking information so <upstream> is considered <branchname>'s upstream branch. If no <branchname> is specified, then it defaults to the current branch.
-- `git branch --unset-upstream <branchname>`
-Remove the upstream information for <branchname>. If no branch is specified it defaults to the current branch.
-- `git branch -vv` - When in list mode, show sha1 and commit subject line for each head, along with relationship to upstream branch (if any).
-- `git checkout <branchname>`
-- `git config --global push.default simple` - как и в версии 2.0
+- `git branch -vv` — вывести список локальных веток с указанием привязанных к ним upstream-веток
+- `git branch -u <upstream> [<branchname>]` — задать upstream-ветку для указанной или текущей ветки
+- `git push -u origin HEAD` — создать удаленную ветку, соответствующую локальной и установить между ними upstream-связь, затем добавить изменения из локальной ветки в удаленный репозиторий
+- `git checkout <remote_branchname>` — создать локальную ветку, соответствующую удаленной и установить между ними upstream-связь, затем переместить HEAD на нее
+- `git pull` = `git pull origin` — получить содержимое основного удаленного репозитория и влить изменения из удаленной ветки в соответствующую локальную ветку
+- `git pull --ff-only` — получить содержимое, а затем влить, если возможен fast-forward merge
+- `git pull --rebase` — получить содержимое и выполнить rebase локальной ветки на удаленную ветку
+- `git config --global push.default simple` — задать simple-режим действий с upstream-связями при push. Это режим по умолчанию в Git 2.0 и выше

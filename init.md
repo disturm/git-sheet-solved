@@ -1,4 +1,4 @@
 ## 1. Everything Is Local
 ### Все работает локально
-- `git init` — Create an empty Git repository or reinitialize an existing one
-- `git clone` — Clone a repository into a new directory
+- `git init` — создать пустой репозиторий
+- `git clone <url>` — склонировать репозиторий в новую директорию

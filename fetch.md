@@ -1,9 +1,6 @@
 ## 7. Fetch Any Time
 ### Всегда можно получить коммиты любого репозитория через fetch
-- `git remote add <name> <url>` — Adds a remote with name for the repository at url
-- `git remote -v`
-- `git fetch` — Download objects and refs from another repository
-- `git fetch --all` — Fetch all remotes.
-- `git pull` — Fetch from and integrate with another repository or a local branch
-- `git pull --ff-only`
-- `git pull --rebase`
+- `git remote -v` — вывести список удаленных репозиториев с их адресами
+- `git remote add <name> <url>` — добавить удаленный репозиторий с URL и дать ему указанное имя
+- `git fetch` = `git fetch origin` — получить содержимое основного удаленного репозитория
+- `git fetch --all` — получить содержимое всех удаленных репозиториев из списка

@@ -1,4 +1,4 @@
 ## 4. Merge Them All
 ### Два состояния можно объединить через merge, mergetool и commit
-- `git merge <commit>` Join two or more development histories together
-- `git mergetool` Run merge conflict resolution tools to resolve merge conflicts
+- `git merge <commit>` — объединить текущую ветку с другой
+- `git mergetool` — разрешить имеющиеся конфликты

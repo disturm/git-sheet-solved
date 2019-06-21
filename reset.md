@@ -1,7 +1,8 @@
 ## 10. Reset The Difference
-### Хранятся файлы, diff вычисляется на лету
-- `git reset --hard <commit>` - Discards all history and changes back to the specified commit
-- `git reset --mixed <commit>` - Undoes all commits afer [commit], preserving changes locally
-- `git reset --soft <commit>`
-- `git diff <commit> [<commit>]` - Show changes between commits, commit and working tree, etc
-- `git difftool <commit> [<commit>]` - Show changes using common diff tools
+### Хранятся файлы, разница вычисляется на лету
+- `git reset --hard <commit>` — переместить текущую ветку на `<commit>`, задать индекс и директорию согласно коммиту, устранив всю разницу
+- `git reset --mixed <commit>` — переместить текущую ветку на `<commit>`, задать индекс согласно коммиту, оставить разницу между исходным и новым состоянием в директории
+- `git reset --soft <commit>` — переместить текущую ветку на `<commit>`, не задавать индекс и директорию согласно коммиту, а оставить разницу между исходным и новым состоянием в индексе и директории
+- `git reset --hard HEAD~1` — отменить последний коммит
+- `git diff <commit> [<commit>]` — вывести разницу между двумя коммитами
+- `git difftool <commit> [<commit>]` - вывести разницу с помощью difftool из настроек
