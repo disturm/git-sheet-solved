@@ -1,4 +1,4 @@
-## 3. Tag To Branch
+## S3. Refer To Branch
 ### Используются именованные ссылки
 - `git tag` — вывести список тегов
 - `git tag <tagname>` — создать тег

@@ -1,4 +1,4 @@
-## 9. Upstream Mode
+## R3. Upstream Mapping
 ### Связь локальных и удаленных веток устанавливается явно
 - `git branch -vv` — вывести список локальных веток с указанием привязанных к ним upstream-веток
 - `git branch -u <upstream> [<branchname>]` — задать upstream-ветку для указанной или текущей ветки

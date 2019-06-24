@@ -1,4 +1,4 @@
-## 1. Everything Is Local
+## S1. Everything Is Local
 ### Все работает локально
 - `git init` — создать пустой репозиторий
 - `git clone <url>` — склонировать репозиторий в новую директорию

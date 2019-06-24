@@ -1,4 +1,5 @@
-## Help, configuration and more
+## H1. Helpful And Configurable
+### Гибкая настройка под любой процесс
 - `git help` — список команд
 - `git <command> -h` — помощь по команде в терминале
 - `git <command> --help` — документация по команде в браузере
@@ -7,8 +8,6 @@
 - `git config -e` — редактировать настройки репозитория
 - `git config --global user.name "<name>"` — задать имя пользователя
 - `git config --global user.email "<email>"` — задать почту пользователя
-- `gitex` — открыть GitExtensions для текущей папки
-- `gitex commit` — открыть интерфейс коммита из GitExtensions
 
 ### Aliases
 - `git config --global alias.ci "!gitex commit"`
