@@ -8,5 +8,6 @@
 - `git stash pop` — восстановить последний сохраненный набор изменений и удалить его из списка
 - `git stash list` — показать список сохраненных наборов изменений
 - `git revert <commit>` — создать коммит, отменяющий изменения из коммита
-- `git diff <commit> [<commit>]` — вывести разницу между двумя коммитами
-- `git difftool <commit> [<commit>]` - вывести разницу с помощью difftool из настроек
+- `git diff <from_commit> [<to_commit>]` — вывести разницу между двумя коммитами
+- `git diff --name-status <from_commit> [<to_commit>]` — список измененных файлов
+- `git difftool <from_commit> [<to_commit>]` - вывести разницу с помощью difftool из настроек

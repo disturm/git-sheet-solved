@@ -18,16 +18,40 @@
             font-weight: 600;
             line-height: 1.25;
             text-align: center;
+			margin-top: 0px;
+			margin-bottom: 20px;
         }
+		
+		.header {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            line-height: 1.25;
+			height: 40px;
+            text-align: center;
+			margin-top: 0px;
+			margin-bottom: 20px;
+        }
+		
+		.header a {
+			display: inline-block;
+			padding-top: 15px;
+			font-size: 14px;
+			font-weight: 600;
+		}
 
         .page {
             display: flex;
             justify-content: space-between;
             page-break-after: always;
+			margin: 30px;
         }
 
-        .page .column {
-            margin: 0px 10px;
+        .page .leftColumn {
+            margin: 0px 30px 0px 0px;
+            width: 100%;
+        }
+		
+		.page .rightColumn {
+            margin: 0px 0px 0px 30px;
             width: 100%;
         }
 
@@ -38,26 +62,27 @@
     </style>
 </head>
 <body>
-    <h1>Git Rules Sheet</h1>
     <div class="page">
-        <div class="column">
+        <div class="leftColumn">
+			<div class="header"><a href="https://github.com/kontur-courses/git">https://github.com/kontur-courses/git</a></div>
+			<div class="block"><zero-md src="./fetch.md"/></div>
+            <div class="block"><zero-md src="./push.md"/></div>
+            <div class="block"><zero-md src="./upstream.md"/></div>
+        </div>
+        <div class="rightColumn">
+			<h1>Git Rules Sheet</h1>
             <div class="block"><zero-md src="./init.md"/></div>
             <div class="block"><zero-md src="./commit.md"/></div>
             <div class="block"><zero-md src="./branch.md"/></div>
         </div>
-        <div class="column">
-            <div class="block"><zero-md src="./fetch.md"/></div>
-            <div class="block"><zero-md src="./push.md"/></div>
-            <div class="block"><zero-md src="./upstream.md"/></div>
-        </div>
     </div>
     <div class="page">
-        <div class="column">
+        <div class="leftColumn">
             <div class="block"><zero-md src="./merge.md"/></div>
             <div class="block"><zero-md src="./rebase.md"/></div>
             <div class="block"><zero-md src="./reset.md"/></div>
         </div>
-        <div class="column">
+        <div class="rightColumn">
             <div class="block"><zero-md src="./reflog.md"/></div>
             <div class="block"><zero-md src="./help.md"/></div>
         </div>

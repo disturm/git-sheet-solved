@@ -10,10 +10,11 @@
 - `git config --global user.email "<email>"` — задать почту пользователя
 
 ### Aliases
-- `git config --global alias.ci "!gitex commit"`
-- `git config --global alias.st "git status -sb"`
-- `git config --global alias.graph "git log --oneline --graph --all"`
-- `git config --global alias.co "git checkout"`
+- `git config --global alias.x "!start GitExtensions.exe"`
+- `git config --global alias.ci "!start GitExtensions.exe commit"`
+- `git config --global alias.st "status -sb"`
+- `git config --global alias.graph "log --oneline --graph --all"`
+- `git config --global alias.co "checkout"`
 - `git config --global alias.pushup "push -u origin HEAD"`
 - `git config --global alias.puff "pull --ff-only"`
 - `git config --global alias.pure "pull --rebase"`
